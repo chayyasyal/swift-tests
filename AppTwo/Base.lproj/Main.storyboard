@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppTwo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landscape-1" translatesAutoresizingMaskIntoConstraints="NO" id="kXp-do-1c7">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z0T-ue-Bhb">
+                                <rect key="frame" x="0.0" y="262.5" width="667" height="112.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scenic town by the sea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S19-im-p43">
+                                        <rect key="frame" x="20" y="20.5" width="627" height="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beautiful seaside town" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qT-gX-xkX">
+                                        <rect key="frame" x="20" y="59.5" width="627" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0048979922279792643" green="0.0048979922279792643" blue="0.0048979922279792643" alpha="0.79417913732394352" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="0qT-gX-xkX" secondAttribute="trailing" constant="20" id="Fol-RO-E0L"/>
+                                    <constraint firstItem="S19-im-p43" firstAttribute="top" secondItem="Z0T-ue-Bhb" secondAttribute="top" constant="20" id="NIJ-m5-wIT"/>
+                                    <constraint firstAttribute="trailing" secondItem="S19-im-p43" secondAttribute="trailing" constant="20" id="dPC-Qu-bg7"/>
+                                    <constraint firstItem="S19-im-p43" firstAttribute="leading" secondItem="Z0T-ue-Bhb" secondAttribute="leading" constant="20" id="fZt-Hc-eb7"/>
+                                    <constraint firstItem="0qT-gX-xkX" firstAttribute="leading" secondItem="Z0T-ue-Bhb" secondAttribute="leading" constant="20" id="kmV-AL-U6s"/>
+                                    <constraint firstItem="0qT-gX-xkX" firstAttribute="top" secondItem="S19-im-p43" secondAttribute="bottom" constant="10" id="oey-MK-YdI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="kXp-do-1c7" secondAttribute="bottom" id="JSo-Q6-xIj"/>
+                            <constraint firstItem="Z0T-ue-Bhb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ows-G2-s52"/>
+                            <constraint firstItem="kXp-do-1c7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VeM-lP-oDj"/>
+                            <constraint firstItem="Z0T-ue-Bhb" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="g0e-tE-14N"/>
+                            <constraint firstItem="kXp-do-1c7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="klR-Q3-5Xz"/>
+                            <constraint firstAttribute="bottom" secondItem="Z0T-ue-Bhb" secondAttribute="bottom" id="sfK-v2-Gso"/>
+                            <constraint firstAttribute="trailing" secondItem="kXp-do-1c7" secondAttribute="trailing" id="sur-jp-YQR"/>
+                            <constraint firstAttribute="trailing" secondItem="Z0T-ue-Bhb" secondAttribute="trailing" id="wrT-Fl-StE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="landscape-1" width="2005" height="1085"/>
+    </resources>
+</document>
